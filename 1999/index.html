@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业6661</title>
+    <link rel="stylesheet" href="1999.css">
+</head>
+
+<body>
+    <div class="all">
+        <!-- 导航栏 -->
+        <div class="nav">
+            <div class="head">
+                <div class="left">
+                    <h1>
+                        <a href="#">
+                            <img src="logo.png" alt="重返未来1999">
+                        </a>
+                    </h1>
+                </div>
+                <div class="right">
+                    <ul class="right-1">
+                        <li class="center">
+                            <a href="#" class="text-none">
+                                <div class="text">首页</div>
+                                <div class="eng">HOME</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="#" class="text-none">
+                                <div class="text">资讯</div>
+                                <div class="eng">NEWS</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="#" class="text-none">
+                                <div class="text">角色</div>
+                                <div class="eng">CHARACTER</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="#" class="text-none">
+                                <div class="text">世界</div>
+                                <div class="eng">BACKSTORY</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="#" class="text-none">
+                                <div class="text">影音</div>
+                                <div class="eng">GALLERY</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="https://re.bluepoch.com/usercenter/" target="_blank" class="text-none">
+                                <div class="text">个人中心</div>
+                                <div class="eng">ACCOUNT</div>
+                            </a>
+                        </li>
+                        <li class="center">
+                            <a href="https://re.bluepoch.com/paymentsl/1999/commodity" target="_blank"
+                                class="text-none">
+                                <div class="text">充值中心</div>
+                                <div class="eng">PAYMENT</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="right-2">
+                        <img src="v2.webp" alt onclick="muteMusic(1)" class="music">
+                        <img src="v2c.png" alt onclick="muteMusic(2)" class="music">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <div>
+            <div class="vertin">
+                <video src="p.mp4" autoplay muted loop class="video" style="width: 100%"></video>
+                <img src="1.png" alt="" class="first-1">
+                <img src="2.png" alt="" class="first-2">
+                <div class="download">
+                    <div class="first-4">
+                        <img src="https://gamecms-res.sl916.com/official_website_resource/50001/4/GAME_PIC/20230727/官网下载二维码_202c1eaf76bc4f9ba3b825ee4f942a36.png"
+                            alt="QR">
+                    </div>
+                    <div class="first-4-1">
+                        <a href="https://d.bluepoch.com/home/Reverse1999_Bluepoch_1000.apk" download target="_blank">
+                            <img src="android.png" alt="">
+                        </a>
+                        <a href="https://d.bluepoch.com/home/Reverse1999_MuMuInstaller_3.1.4.0_Bluepoch.exe" download
+                            target="_blank">
+                            <img src="mumu.png" alt="">
+                        </a>
+                    </div>
+                    <div class="first-4-2">
+                        <a href="https://apps.apple.com/cn/app/%E9%87%8D%E8%BF%94%E6%9C%AA%E6%9D%A5-1999/id1611712418"
+                            target="_blank">
+                            <img src="ios.png" alt="">
+                        </a>
+                        <a href="https://l.taptap.cn/ABRmaGpd?channel=rep-rep_agdwqnggohs" target="_blank">
+                            <img src="taptap.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cd" onclick="playFirst(1)">
+                        <img src="play.png" alt class="cd-png">
+                    </div>
+                </div>
+                <div class="reverse1999">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 音频 -->
+    <audio id="bgm" src="bgm.mp3"></audio>
+
+    <!-- 音频控制按钮 -->
+    <div class="audio-control" onclick="toggleAudio()">
+        <img id="audio-icon" src="v2c.png" alt="音频控制">
+    </div>
+
+    <script>
+        function toggleAudio() {
+            const audio = document.getElementById('bgm');
+            const icon = document.getElementById('audio-icon');
+
+            if (audio.paused) {
+                audio.play();
+                icon.src = 'v2.webp';
+            } else {
+                audio.pause();
+                icon.src = 'v2c.png';
+            }
+        }
+    </script>
+</body>
+
+</html>
